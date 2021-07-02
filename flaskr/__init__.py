@@ -32,6 +32,12 @@ def create_app():
     from . import db
     db.init_app(app)
 
+    return app
+
+
+    from . import auth
+    app.register_blueprint(auth.bp)
+
     return app    
 
     # a simple page that says hello
