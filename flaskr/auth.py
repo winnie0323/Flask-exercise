@@ -7,6 +7,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 
 from flaskr.db import get_db
 
+<<<<<<< HEAD
 bp = Blueprint('auth', __name__, url_prefix='/auth')
 @bp.route('/register', methods=('GET', 'POST'))
 def register():
@@ -91,3 +92,6 @@ def login_required(view):
         return view(**kwargs)
 
     return wrapped_view
+=======
+bp = Blueprint('auth', __name__, url_prefix='/auth')
+>>>>>>> d62f3b5568f9c99c90c658c6cef373444369e622
